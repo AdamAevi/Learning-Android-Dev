@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "781531157303",
+    "project_id": "learningloop-dae17",
+    "storage_bucket": "learningloop-dae17.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:781531157303:android:713748e02732d9436340b2",
+        "android_client_info": {
+          "package_name": "com.example.learningsocialnetwork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "781531157303-ghn1idubgkaiuh3ts1fr3duopd9k9s0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDW-ryH2ikASSsIlOpT6ZU164t29KRc_U8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "781531157303-ghn1idubgkaiuh3ts1fr3duopd9k9s0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
