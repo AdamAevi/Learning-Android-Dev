@@ -11,7 +11,6 @@
     <string name="facebook_logo">Facebook Logo</string>
     <string name="enter_your_email">Enter your email</string>
     <string name="enter_password">Enter Password</string>
-    <string name="create_account">Create Account</string>
     <string name="need_a_new_account">Need a new account?</string>
     <string name="or_login_with">Or Login with</string>
     <string name="twitter_logo">Twitter Logo</string>
@@ -22,4 +21,10 @@
     <string name="full_name">Full Name</string>
     <string name="main_type_of_waste">Main Type of Waste</string>
     <string name="save_yo_deets">Save Yo Deets</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="create_account">Create Account</string>
+    <string name="confirm">Confirm</string>
+    <string name="fullcirclelogo">FullCircleLogo</string>
 </resources>
