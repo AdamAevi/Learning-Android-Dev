@@ -55,6 +55,16 @@
         android:padding="10dp"
         android:autofillHints="" />
 
+    <ProgressBar
+        android:id="@+id/register_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@color/colorAccent"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_marginTop="-7dp"/>
 
 
     <EditText
