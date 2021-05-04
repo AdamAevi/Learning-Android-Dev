@@ -60,7 +60,7 @@
         android:padding="10dp" />
 
     <Button
-        android:id="@+id/register_create_account"
+        android:id="@+id/register_create_account_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_confirm_password"
