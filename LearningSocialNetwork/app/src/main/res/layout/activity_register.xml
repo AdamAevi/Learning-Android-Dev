@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/register"
+    android:background="@color/colorOffWhite"
     tools:context=".RegisterActivity">
 
     <ImageView
@@ -13,8 +13,8 @@
         android:layout_height="150dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="10dp"
-        app:srcCompat="@drawable/logo" />
+        android:layout_marginTop="26dp"
+        app:srcCompat="@drawable/full_circle" />
 
     <EditText
         android:id="@+id/register_email"
@@ -22,7 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_icon"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="42dp"
+        android:layout_marginTop="26dp"
         android:background="@drawable/inputs"
         android:drawableLeft="@drawable/email"
         android:ems="10"

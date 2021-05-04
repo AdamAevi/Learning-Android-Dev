@@ -1,8 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#fedd74</color>
-    <color name="colorPrimaryDark">#ffba6d</color>
-    <color name="colorAccent">#45b5e7</color>
+<!--New Colours-->
+    <color name="colorPrimary">#a1ee97</color>
+    <color name="colorPrimaryDark">#52a946</color>
+    <color name="colorAccent">#14560b</color>
+    <color name="colorOffWhite">#f9f1f1</color>
+
+
+
+
+<!--Current Colours    -->
+<!--    <color name="colorPrimary">#fedd74</color>-->
+<!--    <color name="colorPrimaryDark">#ffba6d</color>-->
+<!--    <color name="colorAccent">#45b5e7</color>-->
+
+
+
     <!--    <color name="purple_200">#FFBB86FC</color>-->
 <!--    <color name="purple_500">#FF6200EE</color>-->
 <!--    <color name="purple_700">#FF3700B3</color>-->
