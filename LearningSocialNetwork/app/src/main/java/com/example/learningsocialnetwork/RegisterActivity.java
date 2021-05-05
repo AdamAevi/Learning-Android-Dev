@@ -50,6 +50,18 @@ public class RegisterActivity extends AppCompatActivity {
         });
     }
 
+    // On startup, check if a user is logged in.
+    // If so - go to Main Activity
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        FirebaseUser currentUser = mAuth.getCurrentUser();
+        if(currentUser != null){
+            sendUserToMainActivity();
+        }
+    }
+
     private void createNewAccount() {
         String email = userEmail.getText().toString();
         String password = userPassword.getText().toString();
@@ -92,6 +104,13 @@ public class RegisterActivity extends AppCompatActivity {
                 });
         }
     }
+
+    private void sendUserToMainActivity() {
+        Intent registerIntent = new Intent(RegisterActivity.this, MainActivity.class);
+        registerIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(registerIntent);
+    }
+
 
     private void sendToSetupActivity() {
         Intent setupIntent = new Intent(RegisterActivity.this, SetupActivity.class);

@@ -7,6 +7,17 @@
     android:background="@color/colorOffWhite"
     tools:context=".RegisterActivity">
 
+    <ProgressBar
+        android:id="@+id/register_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@color/colorAccent"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_marginTop="-7dp"/>
+
     <ImageView
         android:id="@+id/register_icon"
         android:layout_width="150dp"
@@ -54,18 +65,6 @@
         android:inputType="textPassword"
         android:padding="10dp"
         android:autofillHints="" />
-
-    <ProgressBar
-        android:id="@+id/register_progress_bar"
-        style="?android:attr/progressBarStyleHorizontal"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:indeterminate="true"
-        android:max="100"
-        android:backgroundTint="@color/colorAccent"
-        android:indeterminateTint="@color/colorAccent"
-        android:layout_marginTop="-7dp"/>
-
 
     <EditText
         android:id="@+id/register_confirm_password"
