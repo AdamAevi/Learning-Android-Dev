@@ -7,6 +7,16 @@
     tools:context=".SetupActivity"
     android:background="@color/colorOffWhite">
 
+    <ProgressBar
+        android:id="@+id/setup_progress_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:max="100"
+        android:backgroundTint="@color/colorAccent"
+        android:indeterminateTint="@color/colorAccent"
+        android:layout_marginTop="-7dp"/>
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/setup_profile_image"
