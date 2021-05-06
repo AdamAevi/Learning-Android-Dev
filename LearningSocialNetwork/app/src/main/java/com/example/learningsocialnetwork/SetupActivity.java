@@ -1,9 +1,11 @@
 package com.example.learningsocialnetwork;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.text.TextUtils;
@@ -18,6 +20,8 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.theartofdev.edmodo.cropper.CropImage;
+import com.theartofdev.edmodo.cropper.CropImageView;
 
 import java.util.HashMap;
 
@@ -34,6 +38,7 @@ public class SetupActivity extends AppCompatActivity {
     private DatabaseReference usersRef;
 
     String currentUserId;
+    final static int Gallery_Pic = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +66,37 @@ public class SetupActivity extends AppCompatActivity {
                 saveAccountSetupInformation();
             }
         });
+
+        userProfileImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent galleryIntent = new Intent();
+                galleryIntent.setAction(Intent.ACTION_GET_CONTENT);
+                galleryIntent.setType("image/*");
+                startActivityForResult(galleryIntent, Gallery_Pic);
+
+            }
+        });
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if(requestCode == Gallery_Pic && resultCode == RESULT_OK && data != null){
+            Uri imageUri = data.getData();
+            CropImage.activity()
+                    .setGuidelines(CropImageView.Guidelines.ON)
+                    .setAspectRatio(1,1)
+                    .start(this);
+        }
+        if(requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE){
+            CropImage.ActivityResult result = CropImage.getActivityResult(data);
+
+            if (requestCode == RESULT_OK){
+                Uri resultUri = result.getUri();
+            }
+        }
     }
 
     private void saveAccountSetupInformation() {
